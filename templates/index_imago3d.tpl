@@ -227,7 +227,9 @@
                 Per vedere il tuo modello fai click sullo schermo <br />
                 (W, A, S, D = Move, SPACE=Jump!,  MOUSE = Look around)
                 <br />
-                <a href="index.php" style="color:white;">TORNA ALL'EDITOR</a>
+                <a href="index.php" style="color:white;">TORNA ALL'EDITOR JSON</a>
+                <br />
+                <a href="raph.php" style="color:white;">TORNA ALL'EDITOR RAPHAEL</a>
             </div>
             
             

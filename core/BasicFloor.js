@@ -5,7 +5,7 @@ BasicFloor = function()
 }
 
 
-BasicFloor.prototype.CreateFloor = function(x,y,z)
+BasicFloor.prototype.CreateFloor = function(x,y,z,xposition,yposition)
 {
 
     var mapUrl = "core/images/floor_1.jpg";
@@ -22,7 +22,13 @@ BasicFloor.prototype.CreateFloor = function(x,y,z)
     var mesh = new THREE.Mesh(geometry, material);
     mesh.castShadow = true;
     mesh.receiveShadow = true;
+    if(xposition==null && yposition==null){
     mesh.position.set(0, z, -180); // 136 = 180-(88/2)
+    }
+    else{
+        console.log("Posizione del floor definita");
+        mesh.position.set(xposition/2, z, -180+yposition/2);
+    }
     mesh.rotation.z = Math.PI / 2;
     
    objects.push(mesh); //rende solido

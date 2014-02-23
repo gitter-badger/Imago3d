@@ -105,6 +105,7 @@ var aux;
 Wall.prototype.CreateWall = function(dimension,y_rotation,position,windows,doors)
 {
 
+    console.log(windows);
 
     var mapUrl = "core/images/wall_1.jpg";
     var map = THREE.ImageUtils.loadTexture(mapUrl);
@@ -128,7 +129,7 @@ for(var i=0;i<windows.length;i++)
 {
 var cube_geometryL = new THREE.CubeGeometry( windows[i].width, windows[i].height, windows[i].depth);
 var cube_meshL = new THREE.Mesh(cube_geometryL,new THREE.MeshLambertMaterial());
-cube_meshL.position.set((position.x/2)-windows[i].positionx, (dimension.height/2-2)+position.y+windows[i].positiony, (-180+position.z/2));
+cube_meshL.position.set((position.x/2)+windows[i].positionx,(dimension.height/2-2)+position.y+windows[i].positiony, (-180+position.z/2));
 var cube_bspL = new ThreeBSP( cube_meshL );
 var cube_bsp = cube_bsp.subtract( cube_bspL );     
 }
@@ -151,8 +152,6 @@ var result = cube_bsp.toMesh(new THREE.MeshLambertMaterial({map:map }));
 
 var aux;
     switch (y_rotation) {
-
-
         case 1:
             result.rotation.y = Math.PI / 2;
             aux=(Math.PI / 2);
@@ -167,6 +166,9 @@ var aux;
         case 4:
             result.rotation.y = Math.PI / -3;
             break; //oblique sx
+        case 0:
+           //NO ROTATE
+            break;
 
     }
 

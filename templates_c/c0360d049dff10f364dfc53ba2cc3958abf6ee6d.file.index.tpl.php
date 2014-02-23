@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2014-02-23 16:43:31
-         compiled from ".\templates\index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:95315277b3786db481-41618343%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.15, created on 2014-01-04 03:30:26
+         compiled from "./templates/index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:19168843165277c727a6e7e9-17809372%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
+    'c0360d049dff10f364dfc53ba2cc3958abf6ee6d' => 
     array (
-      0 => '.\\templates\\index.tpl',
-      1 => 1393169963,
+      0 => './templates/index.tpl',
+      1 => 1388697950,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '95315277b3786db481-41618343',
+  'nocache_hash' => '19168843165277c727a6e7e9-17809372',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_5277b3787050a4_32624277',
+  'unifunc' => 'content_5277c727abe6e9_42080426',
   'variables' => 
   array (
     'json' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5277b3787050a4_32624277')) {function content_5277b3787050a4_32624277($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5277c727abe6e9_42080426')) {function content_5277c727abe6e9_42080426($_smarty_tpl) {?><!DOCTYPE html>
 <html>
     <head>
         <title>Imago3d</title>

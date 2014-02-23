@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2014-02-23 16:45:47
-         compiled from ".\templates\index_imago3d.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:275365277b6924b3651-86727622%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.15, created on 2014-01-04 03:30:32
+         compiled from "./templates/index_imago3d.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:11944547485277c72ccb1938-86602200%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '0fbcb404de6130c8ae321365a36d924b38b192d2' => 
+    '7eeabe76f443c8faee51230b98467dca5cc1e6b5' => 
     array (
-      0 => '.\\templates\\index_imago3d.tpl',
-      1 => 1393170339,
+      0 => './templates/index_imago3d.tpl',
+      1 => 1388697950,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '275365277b6924b3651-86727622',
+  'nocache_hash' => '11944547485277c72ccb1938-86602200',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_5277b6924d9177_92679514',
+  'unifunc' => 'content_5277c72cd09f60_91840976',
   'variables' => 
   array (
     'jsonstring' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5277b6924d9177_92679514')) {function content_5277b6924d9177_92679514($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5277c72cd09f60_91840976')) {function content_5277c72cd09f60_91840976($_smarty_tpl) {?><!DOCTYPE html>
 <html>
     <head>
         <title>Imago3d</title>
@@ -253,9 +253,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 Per vedere il tuo modello fai click sullo schermo <br />
                 (W, A, S, D = Move, SPACE=Jump!,  MOUSE = Look around)
                 <br />
-                <a href="index.php" style="color:white;">TORNA ALL'EDITOR JSON</a>
-                <br />
-                <a href="raph.php" style="color:white;">TORNA ALL'EDITOR RAPHAEL</a>
+                <a href="index.php" style="color:white;">TORNA ALL'EDITOR</a>
             </div>
             
             

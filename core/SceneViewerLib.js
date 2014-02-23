@@ -59,21 +59,23 @@ Scene.prototype.init = function(param)
     this.lightA = this.createAmbientLight();
 
     //grandezza sul piano del pavimento x/y
-    
+
      for(var i=0;i<param.length;i++)
     {
-        
+
         switch (param[i].name) {
 
 
         case "Floor":
-            this.floor = this.createFloor(param[i].xdim,param[i].ydim,param[i].level*(wallheight));
+            console.log("Floor: "+param[i].xposition+" - "+param[i].yposition);
+            this.floor = this.createFloor(param[i].xdim,param[i].ydim,param[i].level*(wallheight),param[i].xposition,param[i].yposition);
             break; 
         case "mainRoom":
             this.generateRoom(param[i].xdim,param[i].ydim,param[i].level*(wallheight),param[i].windowsFront,param[i].doorsFront,param[i].windowsBack,param[i].doorsBack,param[i].windowsLeft,param[i].doorsLeft,param[i].windowsRight,param[i].doorsRight);
             break;  
         case "Wall":
-            this.generateWall({width: param[i].width, height: param[i].height, depth: param[i].depth}, param[i].yrotation, {x: param[i].positionx, y: param[i].positiony, z:param[i].positionz},param[i].windows,param[i].doors);
+
+            this.generateWall({width: param[i].width, height: param[i].height, depth: param[i].depth}, param[i].y_rotation, {x: param[i].positionx, y: param[i].positiony, z:param[i].positionz},param[i].windows,param[i].doors);
             break; //oblique dx
         
 
@@ -109,10 +111,10 @@ Scene.prototype.createGrid = function()
     this.object3D.add(aux.createGrid());
 };
 
-Scene.prototype.createFloor = function(x,y,z)
+Scene.prototype.createFloor = function(x,y,z,positionx,positiony)
 {
     var aux = new BasicFloor();
-    this.object3D.add(aux.CreateFloor(x, y,z));//aggiungo l'elemento alla scena
+    this.object3D.add(aux.CreateFloor(x, y,z,positionx,positiony));//aggiungo l'elemento alla scena
     return aux;
 }
 
