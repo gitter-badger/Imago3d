@@ -1,5 +1,6 @@
 Imago3d
 =======
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/kenta88/Imago3d?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 UserFriendly System to make 3d Building models using webGl
 
